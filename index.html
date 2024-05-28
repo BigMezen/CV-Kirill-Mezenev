@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Это сайт - резюме Кирилла Мезенева">
+    <meta name="keywords" content="cv, mezenev, work, resume">
+    <title>Kirill Mezenev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Kirill Mezenev</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">О Себе</a></li>
+                <li><a href="#experience">Опыт</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Kirill Mezenev</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Обо мне</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Навыки</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Контакты</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="Avatar.png" alt="Profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Привет! Я</p>
+            <h1 class="title">Кирилл Мезенев</h1>
+            <p class="section__text__p2">Начинающий Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"
+                    onclick="location.href='https://spb.hh.ru/resume/00f2d3c7ff0c900fdc0039ed1f4d5972374a53'" />
+                Моё резюме
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Связаться со мной
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="github.png" alt=" Github profile" class="icon"
+                    onclick="location.href='https://github.com/bigmezen'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Узнай больше</p>
+        <h1 class="title">Обо мне</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="profile.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="education.png" alt="Education icon" class="icon" />
+                        <h3>Образование</h3>
+                        <p><br /><strong>Бакалавр</strong></p>
+                        <p></p>Санкт-Петербургский Горный университет</p>
+                        <p>Автоматизация тех процессов и производств</p>
+                        <p><strong>2018 - 2022</strong></p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Я молодой специалист в области frontend разработки.
+                        Готов к постоянному обучению и развитию, стремлюсь к профессиональному росту в
+                        компании, где смогу внести свой вклад в развитие и достижение общих целей.
+                        Обладаю аналитическими навыками. Нравится изучать новое.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Мои ключевые</p>
+        <h1 class="title">Навыки</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Разработка</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Базовый уровень</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Базовый уровень</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Начальный уровень</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Начальный уровень</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Начальный уровень</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Углубленный уровень</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Прочие навыки</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Английский язык</h3>
+                                <p>Upper Intermidiate(B2)</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Продукты MS Office</h3>
+                                <p>Ушлубленный уровень</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Аналитическое </h3>
+                                <h3>мышление</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Командная </h3>
+                                <h3> работа </h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Связаться со мной</p>
+        <h1 class="title">Контакты</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:kmezenev@icloud.com">kmezenev@icloud.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="telegram.png" alt="Telegram icon" class="icon contact-icon" />
+                <p><a href="https://t.me/kmezenev">Telegram</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#experience">Опыт</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Kirill Mezenev. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
